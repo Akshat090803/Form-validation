@@ -1,12 +1,47 @@
-# React + Vite
+# React Form with Validation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and accessible React form with built-in client-side validation, implemented without using any third-party validation libraries.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Real-time validation for required fields
+- 🔐 Show/Hide password input
+- 🌍 Country and city dropdowns (with dependent selection)
+- 📱 Phone number input with country code
+- 🔒 PAN and Aadhar number validation
+- ❌ Inline error messages for invalid fields
+- 🔄 Disabled submit button until form is valid
+- 📄 Form details displayed on a separate route after successful submission
+- 🔁 Navigation handled with React Router
 
-## Expanding the ESLint configuration
+## 🧩 Fields Included
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- First Name (required)
+- Last Name (required)
+- Username (required)
+- Email (valid format required)
+- Password (required, with toggle visibility)
+- Phone Number (with country code)
+- Country (dropdown)
+- City (dropdown, dependent on country)
+- PAN Number (required)
+- Aadhar Number (required)
+
+## 🛠️ Technologies Used
+
+- React (Functional Components)
+- React Router DOM
+- CSS (vanilla)
+
+## 🧪 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Akshat090803/Form-validation.git
+   cd Form-validation
+
+2. Install dependencies and start the development server:
+   ```bash
+   npm install
+   npm run dev
+    
