@@ -1,0 +1,231 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+ background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0px 15px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.form{
+  width: 35rem;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  height: auto;
+  
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius:10px ;
+  -webkit-border-radius:10px ;
+  -moz-border-radius:10px ;
+  -ms-border-radius:10px ;
+  -o-border-radius:10px ;
+  border: solid white 1px;
+  padding: 6px;
+}
+
+
+
+.btn{
+  
+  background-color: rgb(77, 77, 224);
+  background-color: #3939d1;  
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px);
+  
+ }
+
+ input{
+  height: 1.3rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+ padding: 0.8rem 5px;
+  box-sizing: border-box;
+  
+}
+
+.table{
+  width: 100%;
+  border-spacing: 10px 20px;
+}
+
+
+select{
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+ 
+}
+
+ .error{
+  border: #ff0000 solid 1px;
+ }
+
+ .error-message{
+  font-size: 0.7rem;           /* text-xs */
+  margin-top: -1px;
+  transition: all 0.2s ease;    /* transition-all */
+  color: #ff0000;               /* text-red-700 (default/light theme) */
+ }
+
+
+
+ .pass-div {
+  position: relative;
+  width: 100%;
+}
+
+.passinput {
+  padding-right: 2rem; /* Space for the eye icon */
+  box-sizing: border-box;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.details-table {
+  width: 100%;
+  max-width: 500px;
+  min-width: 500px;
+  margin: 20px auto;
+  /* border-collapse: collapse; */
+  border: 1px solid white;
+
+ 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.details-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.details-table tr:last-child td {
+  border-bottom: none;
+  
+}
+
+.details-table td:last-child{
+  text-align: center;
+}
+
+.details-table td:first-child {
+  font-weight: bold;
+  color: #6a6a6a;
+ text-transform: capitalize;
+  width: 40%;
+    border-right: 1px solid #ccc; 
+}
+
+.no-info{
+  width: auto;
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius:8px ;
+  -webkit-border-radius:8px ;
+  -moz-border-radius:8px ;
+  -ms-border-radius:8px ;
+  -o-border-radius:8px ;
+  padding: 2px 4px;
+}
+
+
+
+@media (max-width: 768px) {
+  .form {
+    width: 98%;
+  }
+  
+}
+
+@media (max-width:468px){
+  .details-table{
+     max-width: 300px;
+     min-width: 300px;
+  } 
+}
+
+
